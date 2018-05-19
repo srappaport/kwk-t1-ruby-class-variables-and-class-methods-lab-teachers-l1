@@ -32,8 +32,8 @@ def self.genre_count
   @@genres.each do |c|
   if genre_count.key?(c) == false
     puts "i got here"
-    c.class
-    genre_count.merge!(:c => 1)
+    puts c
+    genre_count.merge!(c => 1)
     puts genre_count
   else
     genre_count.update(genre_count) { |c,value| value+1}
