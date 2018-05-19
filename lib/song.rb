@@ -27,4 +27,15 @@ def self.artists
   return @@artists.uniq
 end
 
+def self.genre_count
+  genre_count = {}
+  genre_count.each do |key|
+  if genre_count.key?(key) == false
+    genre_count.merge(:key => 1)
+  else
+    genre_count.update(genre_count) { |key,value| value+1}
+  end
+end
+
+
 end
