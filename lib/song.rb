@@ -17,6 +17,9 @@ class Song
   end
 
   def genres
+    if @@genres.include?(@genre) == false
+      @@genre << @genre
+    end
   end
 
   def new
