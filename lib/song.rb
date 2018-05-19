@@ -29,7 +29,7 @@ end
 
 def self.genre_count
   genre_count = {}
-
+  puts @@genres
   @@genres.each do |key|
   if genre_count.key?(key) == false
     genre_count.merge(:key => 1)
@@ -44,4 +44,4 @@ end
 Song.new("Lucifer", "Jay-Z", "rap" )
 Song.new("99 Problems", "Jay-Z", "rap")
 Song.new("hit me baby one more time", "Brittany Spears", "pop")
-@@genres
+
