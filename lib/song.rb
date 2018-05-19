@@ -18,9 +18,15 @@ class Song
   end
 
   def genres
-    if @@genres.include?(@genre) == false
-      @@genre << @genre
-    end
+    @@genres
+  end
+    #if @@genres.include?(@genre) == false
+    #  @@genre << @genre
+    #end
+  #end
+
+  def artists
+    @@artists
   end
 
   def new
