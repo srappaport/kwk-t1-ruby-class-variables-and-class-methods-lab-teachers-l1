@@ -22,7 +22,7 @@ class Song
 def self.genres
   genre_array =[]
   @@genres.each do |c|
-    if @@genres.include?(c) == false
+    if @@genres.include?(c) == true
       genre_array << 1
     end
   end
