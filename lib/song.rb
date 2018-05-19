@@ -20,11 +20,7 @@ class Song
   end
 
 def self.genres
-  genre_array =[]
-  @@genres.each do |c|
-      genre_array << c
-    end
-  return genre_array.uniq
+  return @@artists.uniq
 end
 
 def self.artists
