@@ -8,4 +8,10 @@ class Song
     @artist = artist
     @genre = genre
   end
+
+  def new
+    @name
+    @artist
+    @genre
+  end
 end
