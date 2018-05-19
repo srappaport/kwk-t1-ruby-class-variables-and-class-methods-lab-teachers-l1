@@ -20,9 +20,12 @@ class Song
   end
 
 def self.genres
-    if @@genres.include?(@genre) == false
-      genre_array << @genre
+  genre_array =[]
+  @@genres.each do |c|
+    if @@genres.include?(c) == false
+      genre_array << c
     end
+  end
   end
 
   def self.artists
