@@ -26,7 +26,8 @@ def self.genres
       genre_array << c
     end
   end
-  end
+  return genre_array
+end
 
   def self.artists
     @@artists
