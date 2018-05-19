@@ -23,7 +23,7 @@ def self.genres
   genre_array =[]
   @@genres.each do |c|
     if @@genres.include?(c) == true
-      genre_array << 1
+      genre_array << @genre
     end
   end
   return genre_array
