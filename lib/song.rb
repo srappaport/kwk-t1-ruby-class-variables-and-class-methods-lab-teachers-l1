@@ -38,6 +38,19 @@ def self.genre_count
 end
 return genre_count
 end
+
+def self.artist_count
+  artist_count = {}
+  @@artists.each do |c|
+  if artist_count.key?(c) == false
+    artist_count.merge!(c => 1)
+  else
+    artist_count.update(artist_count) { |c,value| value+1}
+  end
+end
+return artist_count
+end
+
 end
 
 
