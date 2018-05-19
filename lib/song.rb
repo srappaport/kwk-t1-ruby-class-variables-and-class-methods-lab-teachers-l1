@@ -24,7 +24,7 @@ def self.genres
   @@genres.each do |c|
       genre_array << c
     end
-  return genre_array
+  return genre_array.uniq
 end
 
   def self.artists
