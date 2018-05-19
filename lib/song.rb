@@ -29,13 +29,13 @@ end
 
 def self.genre_count
   genre_count = {}
-  @@genres.each do |key|
-  if genre_count.key?(key) == false
+  @@genres.each do |c|
+  if genre_count.key?(c) == false
     puts "i got here"
-    genre_count.merge!(:key => 1)
+    genre_count.merge!(:c => 1)
     puts genre_count
   else
-    genre_count.update(genre_count) { |key,value| value+1}
+    genre_count.update(genre_count) { |c,value| value+1}
     puts "fuck"
   end
 end
