@@ -29,7 +29,7 @@ end
 
 def self.genre_count
   genre_count = {}
-  puts @@genres.type
+  puts @@genres.class
   @@genres.each do |key|
   if genre_count.key?(key) == false
     genre_count.merge(:key => 1)
