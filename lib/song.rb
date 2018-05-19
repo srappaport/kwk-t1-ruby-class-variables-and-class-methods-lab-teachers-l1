@@ -29,7 +29,7 @@ end
 
 def self.artists
   artists_array =[]
-  @@artist.each do |c|
+  @@artists.each do |c|
       artist_array << c
     end
   return artist_array.uniq
