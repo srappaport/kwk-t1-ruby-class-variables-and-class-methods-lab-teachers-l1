@@ -14,4 +14,5 @@ class Song
     @artist
     @genre
   end
+
 end
