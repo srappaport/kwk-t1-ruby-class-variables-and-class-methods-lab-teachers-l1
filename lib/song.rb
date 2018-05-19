@@ -36,8 +36,8 @@ def self.genre_count
   else
     genre_count.update(genre_count) { |c,value| value+1}
   end
-  return genre_count
 end
+return genre_count
 end
 end
 
