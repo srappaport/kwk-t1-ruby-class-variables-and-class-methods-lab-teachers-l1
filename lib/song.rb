@@ -3,10 +3,11 @@ class Song
   attr_accessor :artist
   attr_accessor :song
 
-  def initialize(n, a, g)
-    @name = n
-    @artist = a
-    @genre = g
+  def initialize(name, artist, genre)
+    @name = name
+    @artist = artist
+    @genre = genre
+
   end
 
   def new
