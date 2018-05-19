@@ -19,22 +19,14 @@ class Song
     @@count
   end
 
-  def genres
-    @@genres
+def self.genres
+    if @@genres.include?(@genre) == false
+      @@genre << @genre
+    end
   end
-    #if @@genres.include?(@genre) == false
-    #  @@genre << @genre
-    #end
-  #end
 
-  def artists
+  def self.artists
     @@artists
-  end
-
-  def new
-    @name
-    @artist
-    @genre
   end
 
 end
