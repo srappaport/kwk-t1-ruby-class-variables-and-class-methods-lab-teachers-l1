@@ -21,7 +21,7 @@ class Song
 
 def self.genres
     if @@genres.include?(@genre) == false
-      @@genres << @genre
+      genre_array << @genre
     end
   end
 
